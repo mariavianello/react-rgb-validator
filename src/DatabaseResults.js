@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 
 export default class DatabaseResults extends Component {
-  constructor(props) {
-    super(props);
-  }
+  // constructor(props) {
+  //   super(props);
+  // }
 
   render() {
     return (

@@ -1,10 +1,20 @@
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import './App.css';
 
 export default class Response extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {result: ''};
+  static propTypes = {
+    result: PropTypes.bool,
+  }
+
+  renderResult() {
+    if (this.props.result === undefined) {
+      return ''
+    }
+    else {
+      return this.props.result.toString()
+    }
+
   }
 
   render() {
@@ -14,9 +24,9 @@ export default class Response extends Component {
         <div
           style={this.style()}
           className="Response">
-        </div>
-          <p className="Result">{this.state.result}
+          <p className="Result">{this.renderResult()}
           </p>
+        </div>
       </label>
     );
   }

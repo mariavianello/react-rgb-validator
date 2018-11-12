@@ -1,21 +1,23 @@
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import './App.css';
 
 export default class Button extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      isActive: false
-    }
+  static propTypes = {
+    children: PropTypes.node,
+    onClick: PropTypes.func,
   }
-// https://codepen.io/alligatorio/pen/gxvdxo
+
+  static defaultProps = {
+    onClick: () =>{},
+  }
+
   render() {
     return (
       <div>
       <button
+      onClick = {()=> this.props.onClick()}
       style={this.style()}
-      onMouseDown={() => this.setState({isActive: true})}
-      onMouseUp={() => this.setState({isActice: false})}
       >
       {this.props.children}
       </button>
@@ -27,7 +29,7 @@ export default class Button extends Component {
       margin: '0 auto',
       display: 'inline-flex',
       padding: '1.5vw, 2.5vw',
-      backgroundColor: this.state.isActive ? 'black' : 'green',
+      backgroundColor: 'green',
       color: 'white',
       borderRadius: '5px',
       height: '20px',

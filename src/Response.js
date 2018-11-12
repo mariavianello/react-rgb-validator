@@ -23,7 +23,7 @@ export default class Response extends Component {
   style(){
     return {
       height: '50px',
-      backgroundColor: 'yellow',
+      // backgroundColor: 'yellow',
       borderStyle: 'solid',
       borderColor: 'black',
       borderWidth: '2px',

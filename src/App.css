@@ -1,5 +1,36 @@
-.App {
+body {
+background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png"),linear-gradient(to right, purple, blue);
+margin: 25px;
+}
+
+h1, h2 {
+  color: #f2f2f2;
   text-align: center;
+  font-family: 'Carter One', cursive;
+}
+
+.inputBox {
+  background-color: #f2f2f2;
+  border: #ff007f 3px solid;
+  margin-left: 15px;
+  font-family: 'Josefin Sans', sans-serif;
+  height: 30px;
+  border-radius: 5px;
+  size: 30px;
+  width: 60%;
+  display: inline;
+  font-size: 20px;
+  text-align: center;
+}
+
+label {
+  color: white;
+  font-family: 'Josefin Sans', 'sans-serif';
+  font-size: 25px;
+}
+
+.invisible {
+  visibility: hidden;
 }
 
 

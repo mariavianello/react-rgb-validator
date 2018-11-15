@@ -11,7 +11,8 @@ export default class Input extends Component {
 
   render() {
     return (
-      <div>
+      <div
+      style={this.style()}>
         <label>
         Input String:
         <input
@@ -20,10 +21,17 @@ export default class Input extends Component {
           value={this.props.value}
           // onChange={(e)=> this.props.onChange(e)}
           onChange={this.props.onChange}
+          className="inputBox"
         />
         </label>
       <br/><br/>
       </div>
     );
+  }
+  style() {
+    return {
+      fontSize: '20px',
+      height: '45px',
+    }
   }
 }

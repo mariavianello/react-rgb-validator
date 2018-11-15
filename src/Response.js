@@ -19,8 +19,8 @@ export default class Response extends Component {
 
   render() {
     return (
-      <label>
-        Results:
+      <label >
+        <p className="invisible">Results:</p>
         <div
           style={this.style()}
           className="Response">
@@ -32,14 +32,18 @@ export default class Response extends Component {
   }
   style(){
     return {
+      display: 'flex',
+      justifyContent: 'center',
       height: '50px',
-      // backgroundColor: 'yellow',
+      margin: 'auto',
       borderStyle: 'solid',
-      borderColor: 'black',
-      borderWidth: '2px',
-      width: '100%',
+      borderColor: '#ff007f',
+      borderWidth: '3px',
+      backgroundColor: '#f2f2f2',
+      color: '#7700b2',
+      width: '75%',
       borderRadius: '5px',
-      margin: '15px 15px',
+      fontSize: '25px',
     }
   }
 }

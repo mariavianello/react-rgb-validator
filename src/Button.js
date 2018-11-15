@@ -26,13 +26,24 @@ export default class Button extends Component {
   }
   style() {
     return {
-      margin: '0 auto',
-      display: 'inline-flex',
-      padding: '1.5vw, 2.5vw',
-      backgroundColor: 'green',
-      color: 'white',
+      textAlign: 'center',
+      display: 'flex',
+      margin: 'auto',
+      justifyContent: 'center',
+      alignItems: 'center',
+      // marginLeft: 'auto',
+      // marginRight: 'auto',
+      marginTop: '15px',
+      width: '75%',
+      backgroundColor: 'rgb(210,240,100)',
+      borderColor: 'black',
+      borderStyle: 'solid',
+      borderWidth: '3px',
+      color: 'black',
+      fontFamily: 'Josefin Sans, sans-serif',
+      height: '35px',
+      fontSize: '25px',
       borderRadius: '5px',
-      height: '20px',
       cursor: 'pointer',
     }
   }
